@@ -1,9 +1,10 @@
-import './App.css';
+import classes from './App.module.scss';
+import Map from './components/Map/Map';
 
 function App() {
   return (
-    <div className="App">
-     coviddddffff
+    <div className={classes.App}>
+        <Map />
     </div>
   );
 }
