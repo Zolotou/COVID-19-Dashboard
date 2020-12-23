@@ -1,7 +1,7 @@
-import React from 'react'
-import classes from './GlobalSheet.module.scss'
+import React from 'react';
+import classes from './GlobalPerCountry.module.scss';
 
-const Global = () => {
+const GlobalPerCountry = () => {
 
     return (
         <div className={classes.sheet__wrapper}>
@@ -14,7 +14,7 @@ const Global = () => {
                 </tbody>
             </table>
         </div>
-    );
-};
-  
-export default Global;
+    )
+}
+
+export default GlobalPerCountry;

@@ -1,21 +1,21 @@
-import React, { useLayoutEffect } from 'react';
+import React from 'react';
 import classes from './App.module.scss';
-import GlobalSheet from './components/GlobalSheet/GlobalSheet.jsx'
+import Global from './components/GlobalSheet/GlobalSheet.jsx'
+import GlobalSheetPerCountry from './components/GlobalPerCountry/GlobalPerCountry.jsx'
 import Map from './components/Map/Map.js'
 
 
-function App() {
+const App = () => {
 
   return (
-
-    // <div className={classes.App}>
-    //     <Map />
-    // </div>
-
-    <h1>Hello!!!!!!!!!!!</h1>,
-    <div>Hello!!!!!!!!!!!</div>,
-    <GlobalSheet />,
-    <Map />
+    
+    <div className="wrapper">
+      <div className="wrapper__sheets-global">
+        <Global />
+        <GlobalSheetPerCountry />
+      </div>
+      <Map />
+    </div>
   );
 };
 
